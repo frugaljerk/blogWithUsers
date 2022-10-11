@@ -1,0 +1,11 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% include "header.html" %}
+  <h1>Page Not Authorized</h1>
+  <p>What you were looking for is forbidden.
+  <p><a href="{{ url_for('get_all_posts') }}">go somewhere nice</a>
+
+  {% include "footer.html" %}
+  {% endblock %}
